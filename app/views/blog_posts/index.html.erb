@@ -1,0 +1,8 @@
+<h1>Welcome to my Blog!</h1>
+
+<% @blog_posts.each do |post| %>
+  <div>
+    <h2> Here is a list of all the articles I wrote </h2>
+    <h3> <%= post.title %></h3>
+  </div>
+<% end  %>
