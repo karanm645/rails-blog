@@ -3,9 +3,7 @@ require 'rails_helper'
 RSpec.describe "Create Blog Post" do 
   describe 'when the user clicks create' do
     it 'takes user to form to create new blog post' do       
-      #visit root_path
-      
-      #click_link "create"
+
       visit "/blog_posts/new"
 
 
