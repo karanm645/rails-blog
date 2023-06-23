@@ -1,8 +1,13 @@
 <h1>Welcome to my Blog!</h1>
+    <h2> Here is a list of all the articles I wrote </h2>
 
 <% @blog_posts.each do |post| %>
   <div>
-    <h2> Here is a list of all the articles I wrote </h2>
     <h3> <%= link_to post.title, post %></h3>
+    <% if post.draft? %>
+      <div class="p-2 rounded bg-gray-100 text-gray-900">Draft</div>
+    <% elsif post.scheduled? %>
+      <div class="p-2 rounded bg-gray-100 text-blue-900">Scheduled</div>
+    <% end %>
   </div>
 <% end  %>
