@@ -1,6 +1,8 @@
 class BlogPost < ApplicationRecord
+  has_rich_text :content
+
   validates_presence_of :title, 
-                        :body
+                        :content
   
   scope :sorted, -> { order(arel_table[:published_at].desc.nulls_last).order(updated_at: :desc)} # if multiple ones have the save timestamp
   scope :draft, -> { where(published_at: nil)}
