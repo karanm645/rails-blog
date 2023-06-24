@@ -2,7 +2,7 @@ class BlogPost < ApplicationRecord
   validates_presence_of :title, 
                         :body
   
-  scope :sorted, -> { order(published_at: :desc, updated_at: :desc)} # if multiple ones have the save timestamp
+  scope :sorted, -> { order(arel_table[:published_at].desc.nulls_last).order(updated_at: :desc)} # if multiple ones have the save timestamp
   scope :draft, -> { where(published_at: nil)}
   scope :published, -> { where("published_at <= ?", Time.current)} # where published_at is in the past
   scope :scheduled, -> { where("published_at > ?", Time.current)} # # greater than current time, future post
