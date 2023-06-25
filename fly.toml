@@ -14,7 +14,10 @@ processes = []
   release_command = "bin/rails fly:release"
 
 [env]
-  PORT = "8080"
+  AWS_ACCESS_KEY_ID = "AKIA6BXHLLTQUW4QZYND"
+  AWS_SECRET_ACCESS_KEY = "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"
+  AWS_REGION = "us-east-2"
+  AWS_S3_BUCKET = "karanmehta"
 
 [experimental]
   auto_rollback = true
