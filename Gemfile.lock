@@ -292,7 +292,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.5)
   rspec-rails
-  ruby-vips
+  ruby-vips (~> 2.1, >= 2.1.4)
   selenium-webdriver
   shoulda-matchers
   sprockets-rails
