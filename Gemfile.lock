@@ -297,6 +297,7 @@ DEPENDENCIES
   rack-cors
   rails (~> 7.0.5)
   rspec-rails
+  ruby-vips
   selenium-webdriver
   shoulda-matchers
   sprockets-rails
