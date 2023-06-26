@@ -164,7 +164,6 @@ GEM
       racc (~> 1.4)
     orm_adapter (0.5.0)
     pg (1.5.3)
-    pkg-config (1.5.2)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -212,8 +211,6 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.2.5)
-    rmagick (5.2.0)
-      pkg-config (~> 1.4)
     rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.3)
@@ -299,7 +296,6 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.5)
-  rmagick
   rspec-rails
   ruby-vips (~> 2.1, >= 2.1.4)
   selenium-webdriver
